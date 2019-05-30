@@ -1,0 +1,29 @@
+{
+  "name": "restful-api",
+  "version": "1.0.0",
+  "description": "Creating restful api in Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityamudgil2505/RESTful-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adityamudgil2505/RESTful-API/issues"
+  },
+  "homepage": "https://github.com/adityamudgil2505/RESTful-API#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.5.11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
