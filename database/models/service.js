@@ -1,9 +1,7 @@
 const mongoose = require('mongoose');
 var serviceSchema = mongoose.Schema({
-  title:{
-    type: String,
-    required: true,
-    unique: true
+  content:{
+    type: String
   },
   createdDate:{
     type: Date,

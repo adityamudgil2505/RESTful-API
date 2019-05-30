@@ -1,8 +1,7 @@
 const Service = require('../database/models/service');
+const path = require('path');
 var t = (req, res)=>{
-  Service.create({title: "GSt"}, (data)=>{
-    console.log(data);
-    res.send(data);
-  });
+  console.log(path.resolve(__dirname, "index.html"));
+  res.sendFile(path.resolve(__dirname, "../index.html"));  
 }
 module.exports = t;
