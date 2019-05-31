@@ -1,0 +1,40 @@
+@layout('layouts.app')
+@section('styles')
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.css" rel="stylesheet">
+  <style>
+    form input{
+      text-align: center;
+      display: block;
+      width: 50%;
+      margin: 15px auto;
+    }
+    form button{
+      background-color: lightgreen;
+      margin: 30px auto;
+    }
+  </style>
+@endsection
+
+@section('content')
+<form action="/service-api/create" method="POST" enctype="multipart/form-data">
+  <input type="text" placeholder="Title", name="title" required>
+  <input type="text" placeholder="Price", name="price">
+  <input type="text" placeholder="Time Taken in Days", name="timeTaken">
+  <input type="text" placeholder="Package Included", name="packagesIncluded">
+  <input type="text" placeholder="Description in max 50 words" name="description">
+  <textarea type="text" placeholder="Content" name="content" id="summernote"></textarea>
+  <label for="file">Add background image</label>
+  <input style="margin: 15px 0px;" name="bgImage" type="file" required />
+  <button>Click here</button>  
+</form>
+@endsection
+
+@section('scripts')
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.js"></script>
+<script>
+  $(document).ready(function() {
+      $('#summernote').summernote();
+  });
+</script>
+@endsection

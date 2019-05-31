@@ -8,8 +8,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.js"></script>
 </head>
 <body>
-  <form method="post" action="/service-api/create">
-    <textarea id="summernote" name = "content"></textarea>
+  <form action="/service-api/create" method="POST">
+    <input type="text" placeholder="Title", name="title" required>
+    <input type="text" placeholder="Price", name="price">
+    <input type="text" placeholder="Time Taken in Days", name="timeTaken">
+    <input type="text" placeholder="Package Included", name="packagesIncluded">
+    <input type="text" placeholder="Description in max 50 words" name="description">
+    <textarea type="text" placeholder="Content" name="content" id="summernote"></textarea>
     <button>Click here</button>
   </form>
   <script>

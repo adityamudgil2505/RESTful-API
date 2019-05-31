@@ -5,6 +5,10 @@ const serviceSchema = mongoose.Schema({
     require: true,
     unique: true
   },
+  bgImage:{
+    type: String,
+    unique: true
+  },
   price:{
     type: String,
     default: "Depending on your needs"
