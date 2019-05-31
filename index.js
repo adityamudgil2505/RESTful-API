@@ -15,7 +15,7 @@ const createDataController = require('./controllers/createData');
 const storeDataController = require('./controllers/storeData');
 
 app.get('/', (req, res)=>{
-  res.sendFile(path.resolve(__dirname, "index.html"));
+  res.sendFile(path.resolve(__dirname, "form.html"));
 });
 app.get('/service-api/', getCompleteDataController);
 app.get('/service-api/create', createDataController);
