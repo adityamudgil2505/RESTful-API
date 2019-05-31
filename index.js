@@ -24,6 +24,9 @@ const storeDataController = require('./controllers/storeData');
 app.get('/', endPointController);
 app.get('/service-api/', getCompleteDataController);
 app.get('/service-api/create', createDataController);
+app.get('/successfullyAdded', (req, res)=>{
+  res.render('successfullyAdded');
+});
 app.post('/service-api/create', storeDataController);
 app.listen(process.env.PORT, ()=>{
   console.log(`Serever is up and listening to port ${process.env.PORT}`);

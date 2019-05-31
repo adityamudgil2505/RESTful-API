@@ -2,7 +2,7 @@ const path = require('path');
 const Service = require('../database/models/Service');
 module.exports = (req, res)=>{
   console.log("Time to store data");
-  const data = req.body;
+  let data = req.body;
   let image = req.files.bgImage;
   const location = path.resolve(__dirname, '../public/img',image.name);
   console.log(location);
@@ -17,6 +17,7 @@ module.exports = (req, res)=>{
         console.error("Error in schema");
         return res.redirect('../failed');
       }
+      console.log("Final Step");
       return res.redirect('../successfullyAdded');
     })
   })
