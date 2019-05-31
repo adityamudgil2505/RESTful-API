@@ -1,4 +1,4 @@
-const Service = require('../database/models/service');
+const Service = require('../database/models/Service');
 const path = require('path');
 var t = (req, res)=>{
   console.log(path.resolve(__dirname, "index.html"));

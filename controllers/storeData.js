@@ -1,4 +1,4 @@
-const Service = require('../database/models/service');
+const Service = require('../database/models/Service');
 const t = (req, res)=>{
   let data = req.body;
   console.log(data);
