@@ -1,4 +1,44 @@
 @layout('layouts.app')
+@section('styles')
+ul{
+  list-style:square;
+}
+p a{
+  color: green;
+}
+a{
+  text-decoration: none;
+  color: blue;
+}
+@endsection
 @section('content')
 <h5>Hi guys this is reference to</h5> <h3>API end point</h3>
+<ul>
+  <li><a href="/service-api/">/service-api/</a> :to get all data
+    <br>
+    <p>Example:<br>
+      <a href="/service-api/">/service-api/</a>
+    </p>
+  </li>
+  <li><a href="/service-api/name/">/service-api/name/:_name</a> :to get person information by name
+    <br>
+    <p>Example:<br>
+      <a href="/service-api/name/aditya">/service-api/name/aditya</a>
+    </p>
+  </li>
+  <li><a href="/service-api/age/">/service-api/age/:_age</a> :to get persons information by age
+    <br>
+    <p>Example:<br>
+      <a href="/service-api/age/21">/service-api/age/21</a>
+    </p>
+  </li>
+  <li><a href="/service-api/course/">/service-api/course/:_course</a> :to get persons information by course
+    <br>
+    <p>Example:<br>
+      <a href="/service-api/course/mnc">/service-api/course/mnc</a>
+    </p>
+  </li>
+  <br>
+  <li><a href="/service-api/create">/service-api/create</a> :to enter data in db</li>
+</ul>
 @endsection
