@@ -27,8 +27,8 @@ Endpoints are the URL where HTTP request sends, that is where API service can be
 
 ## Screenshots
 API End Points
-![alt API End Points](https://github.com/adityamudgil2505/RESTful-API/tree/master/Assets/api-end-points.png)
+![alt API End Points](https://github.com/adityamudgil2505/RESTful-API/blob/master/Assets/api-end-points.png)
 Fetching Complete Data
-![alt Fetching Complete Data](https://github.com/adityamudgil2505/RESTful-API/tree/master/Assets/complete-data-json.png)
+![alt Fetching Complete Data](https://github.com/adityamudgil2505/RESTful-API/blob/master/Assets/complete-data-json.png)
 Creating new record
-![alt Creating new record](https://github.com/adityamudgil2505/RESTful-API/tree/master/Assets/inputing-data.png)
+![alt Creating new record](https://github.com/adityamudgil2505/RESTful-API/blob/master/Assets/inputing-data.png)
