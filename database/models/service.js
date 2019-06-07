@@ -1,41 +1,19 @@
 const mongoose = require('mongoose');
 const serviceSchema = mongoose.Schema({
-  title:{
+  name:{
     type: String,
-    require: true,
-    unique: true
   },
-  bgImage:{
-    type: String,
-    unique: true
+  age:{
+    type: Number
   },
-  price:{
-    type: String,
-    default: "Depending on your needs"
-  },
-  timeTaken:{
-    type: String,
-    default: "Depending on your needs"
-  },
-  packagesIncluded:{
+  course:{
     type: String
   },
   description:{
-    type: String,
-    require: true
+    type: String
   },
-  content:{
-    type: String,
-    require: true
-  },
-  // author:{
-  //   type: mongoose.Schema.Types.ObjectId,
-  //   ref: 'Admin',
-  //   require: true
-  // },
-  createdDate:{
-    type: Date,
-    default: new Date()
+  bgImage:{
+    type:String
   }
 });
 var Service = module.exports = mongoose.model('Service', serviceSchema);
