@@ -1,32 +1,35 @@
 @layout('layouts.app')
 @section('styles')
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-lite.css" rel="stylesheet">
-  <style>
-    form input, textarea, label{
-      display: block;
-      width: 50%;
-      margin: 15px auto;
-    }
-    form label{
-      text-align: right;
-      width: 37%;
-      display: inline-block;
-    }
-    form button{
-      background-color: #01e701;
-      display: block;
-      width: 50%;
-      margin: 30px auto;
-      cursor: pointer;
-      padding: 1rem ;
-      outline: none;
-      
-    }
-  </style>
+  body{
+    
+  }
+  p{
+    text-align:center; 
+    font-size:0.8rem;
+  }
+  form input, textarea, label{
+    display: block;
+    width: 50%;
+    margin: 15px auto;
+  }
+  form label{
+    text-align: right;
+    width: 37%;
+    display: inline-block;
+  }
+  form button{
+    background-color: #01e701;
+    display: block;
+    width: 50%;
+    margin: 30px auto;
+    cursor: pointer;
+    padding: 1rem ;
+    outline: none;
+  }
 @endsection
 
 @section('content')
-<p style="text-align:center; font-size:0.8rem;">*Data should be entered in smallcases</p>
+<p>*Data should be entered in smallcases</p>
 <form action="/service-api/create" method="POST" enctype="multipart/form-data">
   <input type="text" placeholder="Name", name="name" required>
   <input type="text" placeholder="Age", name="age" required>
